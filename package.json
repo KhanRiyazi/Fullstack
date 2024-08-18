@@ -1,6 +1,13 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "react-scripts start", // Or your specific start command
+    "build": "react-scripts build", // Or your specific build command
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1" // Correct version of gh-pages
   }
 }
-
